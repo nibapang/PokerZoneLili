@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,AppsFlyerLibDelegate, UNUs
         appsFlyer.waitForATTUserAuthorization(timeoutInterval: 51)
         appsFlyer.delegate = self
         
-//        FirebaseApp.configure()
+        FirebaseApp.configure()
         
         liliStartPushPermission()
         
