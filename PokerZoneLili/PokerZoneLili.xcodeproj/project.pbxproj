@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E0ACCEB935FD78A7E790CFCD /* Pods_PokerZoneLili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48008FD7C0CB95FB6DFBC3B /* Pods_PokerZoneLili.framework */; };
+		FFDCCACF2D7AC073003D88B7 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDCCACE2D7AC073003D88B7 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFDCCAD12D7AC078003D88B7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDCCAD02D7AC078003D88B7 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFDCCAD32D7AC07D003D88B7 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDCCAD22D7AC07D003D88B7 /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,6 +18,9 @@
 		C48008FD7C0CB95FB6DFBC3B /* Pods_PokerZoneLili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerZoneLili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDF13C670E9DCB61E77F66C /* Pods-PokerZoneLili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerZoneLili.release.xcconfig"; path = "Target Support Files/Pods-PokerZoneLili/Pods-PokerZoneLili.release.xcconfig"; sourceTree = "<group>"; };
 		FFDCCA4D2D7A99DF003D88B7 /* PokerZoneLili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerZoneLili.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDCCACE2D7AC073003D88B7 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		FFDCCAD02D7AC078003D88B7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FFDCCAD22D7AC07D003D88B7 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -44,6 +50,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0ACCEB935FD78A7E790CFCD /* Pods_PokerZoneLili.framework in Frameworks */,
+				FFDCCAD32D7AC07D003D88B7 /* AppTrackingTransparency.framework in Frameworks */,
+				FFDCCACF2D7AC073003D88B7 /* AdServices.framework in Frameworks */,
+				FFDCCAD12D7AC078003D88B7 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,9 @@
 		61F67E642F4E8D8D25860D70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFDCCAD22D7AC07D003D88B7 /* AppTrackingTransparency.framework */,
+				FFDCCAD02D7AC078003D88B7 /* AdSupport.framework */,
+				FFDCCACE2D7AC073003D88B7 /* AdServices.framework */,
 				C48008FD7C0CB95FB6DFBC3B /* Pods_PokerZoneLili.framework */,
 			);
 			name = Frameworks;
