@@ -6,5 +6,6 @@ target 'PokerZoneLili' do
   use_frameworks!
 
   # Pods for PokerZoneLili
-
+  pod 'AppsFlyerFramework'
+  pod 'Firebase/Messaging'
 end
