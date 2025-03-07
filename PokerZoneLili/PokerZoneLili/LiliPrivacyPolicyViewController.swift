@@ -15,7 +15,7 @@ class LiliPrivacyPolicyViewController: UIViewController, WKScriptMessageHandler,
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
     @objc var url: String?
-    let liliPrivacyUrlString = ""
+    let liliPrivacyUrlString = "https://www.termsfeed.com/live/359a631c-8a27-4b02-a933-e5ef3696f244"
     
     override func viewDidLoad() {
         super.viewDidLoad()

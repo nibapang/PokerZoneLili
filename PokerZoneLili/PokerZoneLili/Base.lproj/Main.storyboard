@@ -176,7 +176,7 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47W-BP-Flr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47W-BP-Flr">
                                 <rect key="frame" x="496" y="11" width="60" height="61.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ZGX-pV-c0J"/>
@@ -201,8 +201,10 @@
                             <constraint firstAttribute="trailing" secondItem="S9N-9B-Yp1" secondAttribute="trailing" id="HBj-jp-GD8"/>
                             <constraint firstItem="S9N-9B-Yp1" firstAttribute="bottom" secondItem="N7Q-o9-n2C" secondAttribute="bottom" id="KNH-J7-vQi"/>
                             <constraint firstItem="Sfp-ov-00Y" firstAttribute="centerY" secondItem="ecK-Nz-APx" secondAttribute="centerY" id="ML1-Rx-SKe"/>
+                            <constraint firstItem="N7Q-o9-n2C" firstAttribute="trailing" secondItem="47W-BP-Flr" secondAttribute="trailing" constant="12" id="fqT-2N-Eew"/>
                             <constraint firstItem="S9N-9B-Yp1" firstAttribute="top" secondItem="ecK-Nz-APx" secondAttribute="top" id="gBR-8y-rxN"/>
                             <constraint firstItem="S9N-9B-Yp1" firstAttribute="leading" secondItem="ecK-Nz-APx" secondAttribute="leading" id="lhr-hm-tYG"/>
+                            <constraint firstItem="47W-BP-Flr" firstAttribute="top" secondItem="N7Q-o9-n2C" secondAttribute="top" constant="12" id="tYL-AS-0lE"/>
                             <constraint firstItem="Sfp-ov-00Y" firstAttribute="centerX" secondItem="ecK-Nz-APx" secondAttribute="centerX" id="vOZ-a0-0QR"/>
                         </constraints>
                     </view>
