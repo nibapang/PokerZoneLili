@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tfi-BJ-ybk">
+    <device id="retina4_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HappyFestive-MAYVn.ttf">
+            <string>HappyFestive</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Lili History View Controller-->
+        <scene sceneID="78e-3m-86q">
+            <objects>
+                <viewController storyboardIdentifier="HistoryVC" id="aec-eI-ofg" customClass="LiliHistoryViewController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Trw-d4-vi8">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="J8M-ig-h6r">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGK-1f-tHW">
+                                <rect key="frame" x="5" y="5" width="558" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HISTORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XQ-fv-cj9">
+                                        <rect key="frame" x="0.0" y="0.0" width="558" height="45"/>
+                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="20"/>
+                                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9XQ-fv-cj9" secondAttribute="bottom" id="BbG-16-4Tl"/>
+                                    <constraint firstAttribute="height" constant="45" id="R11-Os-59g"/>
+                                    <constraint firstItem="9XQ-fv-cj9" firstAttribute="top" secondItem="RGK-1f-tHW" secondAttribute="top" id="cRU-v9-cUC"/>
+                                    <constraint firstItem="9XQ-fv-cj9" firstAttribute="leading" secondItem="RGK-1f-tHW" secondAttribute="leading" id="geY-W0-Le1"/>
+                                    <constraint firstAttribute="trailing" secondItem="9XQ-fv-cj9" secondAttribute="trailing" id="odO-7A-KVY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXE-C0-RNv">
+                                <rect key="frame" x="5" y="55" width="558" height="260"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eVY-bv-bYg">
+                                        <rect key="frame" x="10" y="10" width="538" height="240"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gtb-gK-gtw">
+                                            <size key="itemSize" width="165" height="168"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="TMK-1I-vTc" customClass="LiliHIstoryCViewController" customModule="Poker_Zone_Lili" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TBA-Ij-HFu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="168"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iNR-Wz-LI9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="165" height="168"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="iNR-Wz-LI9" secondAttribute="trailing" id="bBU-Fp-Fjp"/>
+                                                        <constraint firstItem="iNR-Wz-LI9" firstAttribute="leading" secondItem="TBA-Ij-HFu" secondAttribute="leading" id="m44-L1-xUZ"/>
+                                                        <constraint firstItem="iNR-Wz-LI9" firstAttribute="top" secondItem="TBA-Ij-HFu" secondAttribute="top" id="vHw-9v-ZKq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="iNR-Wz-LI9" secondAttribute="bottom" id="wrW-30-EIX"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="customSize" width="165" height="168"/>
+                                                <connections>
+                                                    <outlet property="cardImg" destination="iNR-Wz-LI9" id="vqJ-fm-AJj"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eVY-bv-bYg" firstAttribute="leading" secondItem="qXE-C0-RNv" secondAttribute="leading" constant="10" id="REb-ST-ByW"/>
+                                    <constraint firstItem="eVY-bv-bYg" firstAttribute="top" secondItem="qXE-C0-RNv" secondAttribute="top" constant="10" id="jR2-Zo-hXz"/>
+                                    <constraint firstAttribute="trailing" secondItem="eVY-bv-bYg" secondAttribute="trailing" constant="10" id="khJ-JL-Wof"/>
+                                    <constraint firstAttribute="bottom" secondItem="eVY-bv-bYg" secondAttribute="bottom" constant="10" id="yfW-53-EFM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-xE-fe9">
+                                <rect key="frame" x="496" y="11" width="60" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dge-fQ-ANE"/>
+                                    <constraint firstAttribute="height" constant="60" id="nJR-Ce-POB"/>
+                                </constraints>
+                                <color key="tintColor" name="shd"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="xmark.seal.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="aec-eI-ofg" eventType="touchUpInside" id="8Xa-It-2KR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="USt-72-h2A"/>
+                        <color key="backgroundColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="USt-72-h2A" firstAttribute="trailing" secondItem="NaG-xE-fe9" secondAttribute="trailing" constant="12" id="2mg-Z6-bzr"/>
+                            <constraint firstItem="RGK-1f-tHW" firstAttribute="leading" secondItem="USt-72-h2A" secondAttribute="leading" constant="5" id="JAE-ob-3lf"/>
+                            <constraint firstItem="qXE-C0-RNv" firstAttribute="leading" secondItem="USt-72-h2A" secondAttribute="leading" constant="5" id="JLj-QL-0Nk"/>
+                            <constraint firstItem="J8M-ig-h6r" firstAttribute="top" secondItem="USt-72-h2A" secondAttribute="top" id="KAF-nM-g9H"/>
+                            <constraint firstItem="USt-72-h2A" firstAttribute="bottom" secondItem="qXE-C0-RNv" secondAttribute="bottom" constant="5" id="V0h-Db-2mt"/>
+                            <constraint firstItem="J8M-ig-h6r" firstAttribute="leading" secondItem="Trw-d4-vi8" secondAttribute="leading" id="aGO-lT-kLE"/>
+                            <constraint firstAttribute="trailing" secondItem="J8M-ig-h6r" secondAttribute="trailing" id="fGS-2O-oY6"/>
+                            <constraint firstItem="USt-72-h2A" firstAttribute="trailing" secondItem="RGK-1f-tHW" secondAttribute="trailing" constant="5" id="liC-Mp-E5J"/>
+                            <constraint firstItem="USt-72-h2A" firstAttribute="trailing" secondItem="qXE-C0-RNv" secondAttribute="trailing" constant="5" id="n5f-qb-RN4"/>
+                            <constraint firstItem="RGK-1f-tHW" firstAttribute="top" secondItem="USt-72-h2A" secondAttribute="top" constant="5" id="uga-vI-mQM"/>
+                            <constraint firstItem="qXE-C0-RNv" firstAttribute="top" secondItem="RGK-1f-tHW" secondAttribute="bottom" constant="5" id="x43-Ap-0rj"/>
+                            <constraint firstAttribute="bottom" secondItem="J8M-ig-h6r" secondAttribute="bottom" id="xBg-Jv-mqQ"/>
+                            <constraint firstItem="NaG-xE-fe9" firstAttribute="top" secondItem="USt-72-h2A" secondAttribute="top" constant="12" id="ycb-qd-zhk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nLp-GU-WDP"/>
+                    <connections>
+                        <outlet property="HistoryCollection" destination="eVY-bv-bYg" id="wUv-89-U47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hs1-xG-iim" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782.3943661971831" y="2696.9465648854962"/>
+        </scene>
+        <!--Lili Navigation Controller-->
+        <scene sceneID="VMJ-E7-xJF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="raB-TT-88j" customClass="LiliNavigationController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MLT-dI-dA1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rlg-DV-303" kind="relationship" relationship="rootViewController" id="DKG-NN-tp2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDU-1y-wsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="1149"/>
+        </scene>
+        <!--Lili Privacy Policy View Controller-->
+        <scene sceneID="IRf-O8-ad5">
+            <objects>
+                <viewController storyboardIdentifier="LiliPrivacyPolicyViewController" id="rxh-h1-sql" customClass="LiliPrivacyPolicyViewController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecK-Nz-APx">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="gM8-e3-r1g">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3r-xx-BNH" customClass="LiliCustomView" customModule="Poker_Zone_Lili" customModuleProvider="target">
+                                <rect key="frame" x="12" y="12" width="544" height="296"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXq-9J-NMF">
+                                        <rect key="frame" x="27" y="37" width="435.5" height="237"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Privacy Policy for Poker Zone Lili
+
+Privacy Policy
+Last updated: March 06, 2025
+
+This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+
+We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the Free Privacy Policy Generator.
+
+Interpretation and Definitions
+Interpretation
+The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+
+Definitions
+For the purposes of this Privacy Policy:
+
+Account means a unique account created for You to access our Service or parts of our Service.
+
+Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+
+Application refers to Poker Zone Lili, the software program provided by the Company.
+
+Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Poker Zone Lili.
+
+Country refers to: Tristan da Cunha
+
+Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+
+Personal Data is any information that relates to an identified or identifiable individual.
+
+Service refers to the Application.
+
+Service Provider means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
+
+Usage Data refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).
+
+You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+
+Collecting and Using Your Personal Data
+Types of Data Collected
+Personal Data
+While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
+
+First name and last name
+
+Usage Data
+
+Usage Data
+Usage Data is collected automatically when using the Service.
+
+Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+
+When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
+
+We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
+
+Use of Your Personal Data
+The Company may use Personal Data for the following purposes:
+
+To provide and maintain our Service, including to monitor the usage of our Service.
+
+To manage Your Account: to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.
+
+For the performance of a contract: the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.
+
+To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.
+
+To provide You with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.
+
+To manage Your requests: To attend and manage Your requests to Us.
+
+For business transfers: We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.
+
+For other purposes: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.
+
+We may share Your personal information in the following situations:
+
+With Service Providers: We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.
+For business transfers: We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
+With Affiliates: We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
+With business partners: We may share Your information with Our business partners to offer You certain products, services or promotions.
+With other users: when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.
+With Your consent: We may disclose Your personal information for any other purpose with Your consent.
+Retention of Your Personal Data
+The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
+
+The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
+
+Transfer of Your Personal Data
+Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
+
+Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.
+
+The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
+
+Delete Your Personal Data
+You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.
+
+Our Service may give You the ability to delete certain information about You from within the Service.
+
+You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.
+
+Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.
+
+Disclosure of Your Personal Data
+Business Transactions
+If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.
+
+Law enforcement
+Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+
+Other legal requirements
+The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
+
+Comply with a legal obligation
+Protect and defend the rights or property of the Company
+Prevent or investigate possible wrongdoing in connection with the Service
+Protect the personal safety of Users of the Service or the public
+Protect against legal liability
+Security of Your Personal Data
+The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+
+Children's Privacy
+Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+
+If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
+
+Links to Other Websites
+Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.
+
+We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+
+Changes to this Privacy Policy
+We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
+
+We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+Contact Us
+If you have any questions about this Privacy Policy, You can contact us:
+
+By email: help@G.COM
+Generated using Free Privacy Policy Generator</string>
+                                        <color key="textColor" name="lbl1"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="cell"/>
+                                <constraints>
+                                    <constraint firstItem="tXq-9J-NMF" firstAttribute="height" secondItem="c3r-xx-BNH" secondAttribute="height" multiplier="0.8" id="40X-Ll-Rm1"/>
+                                    <constraint firstItem="tXq-9J-NMF" firstAttribute="centerX" secondItem="c3r-xx-BNH" secondAttribute="centerX" multiplier="0.9" id="Xrl-dy-nbs"/>
+                                    <constraint firstItem="tXq-9J-NMF" firstAttribute="centerY" secondItem="c3r-xx-BNH" secondAttribute="centerY" multiplier="1.05" id="ame-7P-lNt"/>
+                                    <constraint firstItem="tXq-9J-NMF" firstAttribute="width" secondItem="c3r-xx-BNH" secondAttribute="width" multiplier="0.8" id="fGS-gw-PAO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="200"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="cell"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47W-BP-Flr">
+                                <rect key="frame" x="496" y="11" width="60" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZGX-pV-c0J"/>
+                                    <constraint firstAttribute="width" constant="60" id="qcO-S3-AaK"/>
+                                </constraints>
+                                <color key="tintColor" name="shd"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="xmark.seal.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="rxh-h1-sql" eventType="touchUpInside" id="FYm-R3-9FN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N7Q-o9-n2C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c3r-xx-BNH" firstAttribute="top" secondItem="N7Q-o9-n2C" secondAttribute="top" constant="12" id="2uL-lB-5b4"/>
+                            <constraint firstItem="47W-BP-Flr" firstAttribute="trailing" secondItem="c3r-xx-BNH" secondAttribute="trailing" id="3Y6-1m-Pyz"/>
+                            <constraint firstItem="gM8-e3-r1g" firstAttribute="top" secondItem="ecK-Nz-APx" secondAttribute="top" id="BW4-Y1-mpz"/>
+                            <constraint firstItem="gM8-e3-r1g" firstAttribute="leading" secondItem="ecK-Nz-APx" secondAttribute="leading" id="EU5-dR-Ab1"/>
+                            <constraint firstItem="N7Q-o9-n2C" firstAttribute="bottom" secondItem="c3r-xx-BNH" secondAttribute="bottom" constant="12" id="Hjy-t8-so0"/>
+                            <constraint firstItem="N7Q-o9-n2C" firstAttribute="trailing" secondItem="c3r-xx-BNH" secondAttribute="trailing" constant="12" id="RzO-K8-J6Z"/>
+                            <constraint firstAttribute="bottom" secondItem="gM8-e3-r1g" secondAttribute="bottom" id="WEa-Uy-6JJ"/>
+                            <constraint firstAttribute="trailing" secondItem="gM8-e3-r1g" secondAttribute="trailing" id="YYi-RQ-lXa"/>
+                            <constraint firstItem="47W-BP-Flr" firstAttribute="top" secondItem="c3r-xx-BNH" secondAttribute="top" id="fyP-kI-JwW"/>
+                            <constraint firstItem="c3r-xx-BNH" firstAttribute="leading" secondItem="N7Q-o9-n2C" secondAttribute="leading" constant="12" id="lvi-jh-OeN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y2h-Nw-eLp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAb-pg-BOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="850"/>
+        </scene>
+        <!--Lili Term View Controller-->
+        <scene sceneID="KNw-3D-6j8">
+            <objects>
+                <viewController id="lWz-qR-CgM" customClass="LiliTermViewController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8zv-Ah-Ro1">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="o6n-Cy-e36">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFP-Y2-Wmz" customClass="LiliCustomView" customModule="Poker_Zone_Lili" customModuleProvider="target">
+                                <rect key="frame" x="12" y="12" width="544" height="296"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uag-Qf-5xl">
+                                        <rect key="frame" x="27" y="37" width="435.5" height="237"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Terms and Conditions for Poker Zone Lili
+
+Terms and Conditions
+Last updated: March 06, 2025
+
+Please read these terms and conditions carefully before using Our Service.
+
+Interpretation and Definitions
+Interpretation
+The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+
+Definitions
+For the purposes of these Terms and Conditions:
+
+Application means the software program provided by the Company downloaded by You on any electronic device, named Poker Zone Lili
+
+Application Store means the digital distribution service operated and developed by Apple Inc. (Apple App Store) or Google Inc. (Google Play Store) in which the Application has been downloaded.
+
+Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+
+Country refers to: Tristan da Cunha
+
+Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Poker Zone Lili.
+
+Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+
+Service refers to the Application.
+
+Terms and Conditions (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the Free Terms and Conditions Generator.
+
+Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+
+You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+
+Acknowledgment
+These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+
+Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+
+By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
+
+You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
+
+Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+
+Links to Other Websites
+Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+
+The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+
+We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
+
+Termination
+We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+
+Upon termination, Your right to use the Service will cease immediately.
+
+Limitation of Liability
+Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.
+
+To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+
+Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
+
+"AS IS" and "AS AVAILABLE" Disclaimer
+The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.
+
+Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
+
+Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
+
+Governing Law
+The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+
+Disputes Resolution
+If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
+
+For European Union (EU) Users
+If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which You are resident.
+
+United States Legal Compliance
+You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
+
+Severability and Waiver
+Severability
+If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+
+Waiver
+Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not affect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
+
+Translation Interpretation
+These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
+
+Changes to These Terms and Conditions
+We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
+
+By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+
+Contact Us
+If you have any questions about these Terms and Conditions, You can contact us:
+
+By email: help@g.com
+Generated using Free Privacy Policy Generator</string>
+                                        <color key="textColor" name="lbl1"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="cell"/>
+                                <constraints>
+                                    <constraint firstItem="Uag-Qf-5xl" firstAttribute="centerX" secondItem="PFP-Y2-Wmz" secondAttribute="centerX" multiplier="0.9" id="1xG-L8-Jp7"/>
+                                    <constraint firstItem="Uag-Qf-5xl" firstAttribute="height" secondItem="PFP-Y2-Wmz" secondAttribute="height" multiplier="0.8" id="5jf-fa-hpV"/>
+                                    <constraint firstItem="Uag-Qf-5xl" firstAttribute="width" secondItem="PFP-Y2-Wmz" secondAttribute="width" multiplier="0.8" id="hMB-pX-3p0"/>
+                                    <constraint firstItem="Uag-Qf-5xl" firstAttribute="centerY" secondItem="PFP-Y2-Wmz" secondAttribute="centerY" multiplier="1.05" id="u2E-ie-Hdw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="200"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="cell"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFc-Tz-WJm">
+                                <rect key="frame" x="496" y="11" width="60" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9pJ-89-GDM"/>
+                                    <constraint firstAttribute="height" constant="60" id="iaF-Pz-rUi"/>
+                                </constraints>
+                                <color key="tintColor" name="shd"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="xmark.seal.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="lWz-qR-CgM" eventType="touchUpInside" id="ChK-SI-IY6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bnP-1A-rmg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PFP-Y2-Wmz" firstAttribute="top" secondItem="bnP-1A-rmg" secondAttribute="top" constant="12" id="12q-Oh-bXj"/>
+                            <constraint firstItem="MFc-Tz-WJm" firstAttribute="top" secondItem="PFP-Y2-Wmz" secondAttribute="top" id="5gl-15-b7V"/>
+                            <constraint firstItem="bnP-1A-rmg" firstAttribute="bottom" secondItem="PFP-Y2-Wmz" secondAttribute="bottom" constant="12" id="8Lj-1s-vQZ"/>
+                            <constraint firstItem="o6n-Cy-e36" firstAttribute="leading" secondItem="8zv-Ah-Ro1" secondAttribute="leading" id="9sg-q7-UZG"/>
+                            <constraint firstItem="PFP-Y2-Wmz" firstAttribute="leading" secondItem="bnP-1A-rmg" secondAttribute="leading" constant="12" id="ViL-83-Hst"/>
+                            <constraint firstItem="MFc-Tz-WJm" firstAttribute="trailing" secondItem="PFP-Y2-Wmz" secondAttribute="trailing" id="WfT-kz-Qae"/>
+                            <constraint firstAttribute="bottom" secondItem="o6n-Cy-e36" secondAttribute="bottom" id="dht-YP-Ze1"/>
+                            <constraint firstAttribute="trailing" secondItem="o6n-Cy-e36" secondAttribute="trailing" id="jhu-Cc-TnB"/>
+                            <constraint firstItem="o6n-Cy-e36" firstAttribute="top" secondItem="8zv-Ah-Ro1" secondAttribute="top" id="kbb-Mq-5Kg"/>
+                            <constraint firstItem="bnP-1A-rmg" firstAttribute="trailing" secondItem="PFP-Y2-Wmz" secondAttribute="trailing" constant="12" id="xps-0D-EvA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nw6-M9-v7b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cC-mm-Vwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="1747"/>
+        </scene>
+        <!--Lili Get Started View Controller-->
+        <scene sceneID="b1R-Ds-a8e">
+            <objects>
+                <viewController storyboardIdentifier="GetStartedVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tfi-BJ-ybk" customClass="LiliGetStartedViewController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FhK-ZP-lQm">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="qaa-UM-2Fz">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LPu-Ny-60r">
+                                <rect key="frame" x="85" y="96" width="398" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zmb-uT-kcF">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Zmb-uT-kcF" secondAttribute="height" id="eEb-bK-dXr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP7-ap-pVl" customClass="LiliCustomView" customModule="Poker_Zone_Lili" customModuleProvider="target">
+                                        <rect key="frame" x="172" y="0.0" width="226" height="160"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7q-iB-2cj">
+                                                <rect key="frame" x="6" y="6" width="214" height="148"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Poker Zone Lili is an engaging and visually captivating poker-based game designed for players who enjoy strategy, luck, and competition. With its neon-styled UI and smooth gameplay mechanics, this game offers an immersive poker experience combined with unique game modes.
+</string>
+                                                <color key="textColor" name="lbl1"/>
+                                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="cell"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="F7q-iB-2cj" secondAttribute="trailing" constant="6" id="DO7-5Y-IMM"/>
+                                            <constraint firstItem="F7q-iB-2cj" firstAttribute="leading" secondItem="iP7-ap-pVl" secondAttribute="leading" constant="6" id="G5o-qJ-AwQ"/>
+                                            <constraint firstItem="F7q-iB-2cj" firstAttribute="top" secondItem="iP7-ap-pVl" secondAttribute="top" constant="6" id="fpR-aD-huL"/>
+                                            <constraint firstAttribute="bottom" secondItem="F7q-iB-2cj" secondAttribute="bottom" constant="6" id="gfg-jk-Fad"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-4B-CTH">
+                                <rect key="frame" x="434" y="278" width="122" height="42"/>
+                                <color key="backgroundColor" name="lbl1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="9Hn-hY-oCh"/>
+                                    <constraint firstAttribute="height" constant="42" id="LCN-Wb-XLo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HappyFestive" family="Happy Festive" pointSize="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" name="btn"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="raB-TT-88j" kind="presentation" modalPresentationStyle="fullScreen" id="wxb-Mu-c4r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poker Zone Lili" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks8-2l-7n3">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="62"/>
+                                <fontDescription key="fontDescription" name="HappyFestive" family="Happy Festive" pointSize="52"/>
+                                <color key="textColor" name="lbl1"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="shd"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gRr-lM-GfS"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qaa-UM-2Fz" secondAttribute="trailing" id="1ok-6H-GIu"/>
+                            <constraint firstItem="LPu-Ny-60r" firstAttribute="centerX" secondItem="gRr-lM-GfS" secondAttribute="centerX" id="5fM-F1-8z6"/>
+                            <constraint firstItem="LPu-Ny-60r" firstAttribute="width" secondItem="FhK-ZP-lQm" secondAttribute="width" multiplier="0.7" id="9UU-if-T6h"/>
+                            <constraint firstItem="Ks8-2l-7n3" firstAttribute="leading" secondItem="gRr-lM-GfS" secondAttribute="leading" id="9tZ-Ng-2wW"/>
+                            <constraint firstItem="LPu-Ny-60r" firstAttribute="centerY" secondItem="gRr-lM-GfS" secondAttribute="centerY" multiplier="1.1" id="CNa-5f-bWx"/>
+                            <constraint firstItem="qaa-UM-2Fz" firstAttribute="leading" secondItem="FhK-ZP-lQm" secondAttribute="leading" id="Iuv-Xe-3y6"/>
+                            <constraint firstItem="qaa-UM-2Fz" firstAttribute="top" secondItem="FhK-ZP-lQm" secondAttribute="top" id="Qr1-o1-2wV"/>
+                            <constraint firstItem="Ks8-2l-7n3" firstAttribute="top" secondItem="gRr-lM-GfS" secondAttribute="top" id="Sj7-W6-QET"/>
+                            <constraint firstItem="gRr-lM-GfS" firstAttribute="trailing" secondItem="Ks8-2l-7n3" secondAttribute="trailing" id="VDa-e3-R5L"/>
+                            <constraint firstItem="LPu-Ny-60r" firstAttribute="height" secondItem="FhK-ZP-lQm" secondAttribute="height" multiplier="0.5" id="mDB-r5-EG1"/>
+                            <constraint firstItem="bMs-4B-CTH" firstAttribute="bottom" secondItem="gRr-lM-GfS" secondAttribute="bottom" id="nCa-zd-T7I"/>
+                            <constraint firstAttribute="bottom" secondItem="qaa-UM-2Fz" secondAttribute="bottom" id="vnM-gH-ppv"/>
+                            <constraint firstItem="gRr-lM-GfS" firstAttribute="trailing" secondItem="bMs-4B-CTH" secondAttribute="trailing" constant="12" id="ycv-qe-kdw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="de7-Pm-03S"/>
+                    <connections>
+                        <outlet property="imgBg" destination="qaa-UM-2Fz" id="zZ3-3N-iAg"/>
+                        <outlet property="imgLogo" destination="Zmb-uT-kcF" id="soM-4N-Qx8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRy-CX-3R0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="140"/>
+        </scene>
+        <!--Lili Card Game View Controller-->
+        <scene sceneID="sLe-20-F32">
+            <objects>
+                <viewController storyboardIdentifier="CardGameVC" id="FkB-ZA-kAS" customClass="LiliCardGameViewController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxl-Q6-WE2">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="QrP-xe-yZi">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggl-90-412">
+                                <rect key="frame" x="5" y="5" width="558" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ace Face-Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfX-nC-P0n">
+                                        <rect key="frame" x="0.0" y="0.0" width="558" height="45"/>
+                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="20"/>
+                                        <color key="textColor" name="lbl1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="K5H-aW-olr"/>
+                                    <constraint firstAttribute="trailing" secondItem="UfX-nC-P0n" secondAttribute="trailing" id="lL1-n0-gSI"/>
+                                    <constraint firstAttribute="bottom" secondItem="UfX-nC-P0n" secondAttribute="bottom" id="mB4-KC-DiI"/>
+                                    <constraint firstItem="UfX-nC-P0n" firstAttribute="leading" secondItem="Ggl-90-412" secondAttribute="leading" id="tjx-PR-Gdr"/>
+                                    <constraint firstItem="UfX-nC-P0n" firstAttribute="top" secondItem="Ggl-90-412" secondAttribute="top" id="xWg-yG-jce"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="596-Ul-pt8">
+                                <rect key="frame" x="5" y="55" width="558" height="260"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nri-Gv-wIp">
+                                        <rect key="frame" x="14" y="19.5" width="530" height="221"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpX-C0-V9y">
+                                                <rect key="frame" x="0.0" y="0.0" width="185.5" height="221"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player - 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgg-Vx-MF2">
+                                                        <rect key="frame" x="5" y="5" width="175.5" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="aRq-Ds-q42"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                        <color key="textColor" name="lbl2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQG-pk-xqZ">
+                                                        <rect key="frame" x="0.0" y="191" width="185.5" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="w6I-JI-L10"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                                        <color key="textColor" name="lbl2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back card" translatesAutoresizingMaskIntoConstraints="NO" id="Txe-jb-pqo">
+                                                        <rect key="frame" x="5" y="45" width="175.5" height="141"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="dQG-pk-xqZ" secondAttribute="bottom" id="3KU-5U-gFG"/>
+                                                    <constraint firstItem="Kgg-Vx-MF2" firstAttribute="leading" secondItem="qpX-C0-V9y" secondAttribute="leading" constant="5" id="Ipj-0t-odI"/>
+                                                    <constraint firstItem="dQG-pk-xqZ" firstAttribute="top" secondItem="Txe-jb-pqo" secondAttribute="bottom" constant="5" id="J1J-aS-20Z"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dQG-pk-xqZ" secondAttribute="trailing" id="PZ1-b4-EOX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Txe-jb-pqo" secondAttribute="trailing" constant="5" id="b0Z-D6-ii2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kgg-Vx-MF2" secondAttribute="trailing" constant="5" id="eLh-tu-LXl"/>
+                                                    <constraint firstItem="Kgg-Vx-MF2" firstAttribute="top" secondItem="qpX-C0-V9y" secondAttribute="top" constant="5" id="hZI-6G-CBz"/>
+                                                    <constraint firstItem="Txe-jb-pqo" firstAttribute="top" secondItem="Kgg-Vx-MF2" secondAttribute="bottom" constant="5" id="koA-NA-8jD"/>
+                                                    <constraint firstItem="dQG-pk-xqZ" firstAttribute="leading" secondItem="qpX-C0-V9y" secondAttribute="leading" id="nH5-VC-yam"/>
+                                                    <constraint firstItem="Txe-jb-pqo" firstAttribute="leading" secondItem="qpX-C0-V9y" secondAttribute="leading" constant="5" id="oCO-8U-ee5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="En4-ez-DbS">
+                                                <rect key="frame" x="195.5" y="0.0" width="139" height="221"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back card" translatesAutoresizingMaskIntoConstraints="NO" id="gfI-0Q-oby">
+                                                        <rect key="frame" x="3.5" y="10" width="132" height="166"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tha-8U-OAl">
+                                                        <rect key="frame" x="34.5" y="181" width="70" height="35"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="roll"/>
+                                                        <connections>
+                                                            <action selector="rollBtn:" destination="FkB-ZA-kAS" eventType="touchUpInside" id="tMY-OZ-ZTF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="gfI-0Q-oby" firstAttribute="top" secondItem="En4-ez-DbS" secondAttribute="top" constant="10" id="9cS-0O-bcg"/>
+                                                    <constraint firstItem="gfI-0Q-oby" firstAttribute="width" secondItem="En4-ez-DbS" secondAttribute="width" multiplier="0.95" id="AaS-pw-XIJ"/>
+                                                    <constraint firstItem="gfI-0Q-oby" firstAttribute="height" secondItem="En4-ez-DbS" secondAttribute="height" multiplier="0.75" id="QmF-Dm-f2M"/>
+                                                    <constraint firstItem="tha-8U-OAl" firstAttribute="centerX" secondItem="En4-ez-DbS" secondAttribute="centerX" id="X7x-Y8-Auc"/>
+                                                    <constraint firstItem="tha-8U-OAl" firstAttribute="top" secondItem="gfI-0Q-oby" secondAttribute="bottom" constant="5" id="XqM-g7-8IS"/>
+                                                    <constraint firstItem="gfI-0Q-oby" firstAttribute="centerX" secondItem="En4-ez-DbS" secondAttribute="centerX" id="Ysd-0Q-WG1"/>
+                                                    <constraint firstItem="tha-8U-OAl" firstAttribute="width" secondItem="En4-ez-DbS" secondAttribute="width" multiplier="0.5" id="wBV-OT-dTa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tha-8U-OAl" secondAttribute="bottom" constant="5" id="yp5-id-kyS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mU8-vj-CGE">
+                                                <rect key="frame" x="344.5" y="0.0" width="185.5" height="221"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player - 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jn-13-nAd">
+                                                        <rect key="frame" x="5" y="5" width="175.5" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="9an-yS-T1o"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                        <color key="textColor" name="lbl2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4R-eA-7KT">
+                                                        <rect key="frame" x="0.0" y="191" width="185.5" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="U1h-i5-C9W"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                                        <color key="textColor" name="lbl2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back card" translatesAutoresizingMaskIntoConstraints="NO" id="VWo-ar-HGJ">
+                                                        <rect key="frame" x="5" y="45" width="175.5" height="141"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="6jn-13-nAd" firstAttribute="leading" secondItem="mU8-vj-CGE" secondAttribute="leading" constant="5" id="23m-dj-Q1l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VWo-ar-HGJ" secondAttribute="trailing" constant="5" id="3gh-OJ-cHp"/>
+                                                    <constraint firstItem="6jn-13-nAd" firstAttribute="top" secondItem="mU8-vj-CGE" secondAttribute="top" constant="5" id="Cl4-o8-1V0"/>
+                                                    <constraint firstItem="VWo-ar-HGJ" firstAttribute="top" secondItem="6jn-13-nAd" secondAttribute="bottom" constant="5" id="EWg-mK-dyN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="h4R-eA-7KT" secondAttribute="trailing" id="ILx-4W-Fr2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6jn-13-nAd" secondAttribute="trailing" constant="5" id="Vde-so-HDF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="h4R-eA-7KT" secondAttribute="bottom" id="Wku-iH-lWH"/>
+                                                    <constraint firstItem="h4R-eA-7KT" firstAttribute="leading" secondItem="mU8-vj-CGE" secondAttribute="leading" id="dN0-Ua-QNb"/>
+                                                    <constraint firstItem="VWo-ar-HGJ" firstAttribute="leading" secondItem="mU8-vj-CGE" secondAttribute="leading" constant="5" id="ivB-BM-ijj"/>
+                                                    <constraint firstItem="h4R-eA-7KT" firstAttribute="top" secondItem="VWo-ar-HGJ" secondAttribute="bottom" constant="5" id="n3n-CO-7H5"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mU8-vj-CGE" firstAttribute="width" secondItem="Nri-Gv-wIp" secondAttribute="width" multiplier="0.35" id="EOI-ma-y0f"/>
+                                            <constraint firstItem="qpX-C0-V9y" firstAttribute="width" secondItem="Nri-Gv-wIp" secondAttribute="width" multiplier="0.35" id="w7q-pJ-FCX"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nri-Gv-wIp" firstAttribute="height" secondItem="596-Ul-pt8" secondAttribute="height" multiplier="0.85" id="Py6-6I-9jq"/>
+                                    <constraint firstItem="Nri-Gv-wIp" firstAttribute="centerY" secondItem="596-Ul-pt8" secondAttribute="centerY" id="QWO-Oy-7pF"/>
+                                    <constraint firstItem="Nri-Gv-wIp" firstAttribute="width" secondItem="596-Ul-pt8" secondAttribute="width" multiplier="0.95" id="STG-P2-cQl"/>
+                                    <constraint firstItem="Nri-Gv-wIp" firstAttribute="centerX" secondItem="596-Ul-pt8" secondAttribute="centerX" id="bRC-0S-n7R"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pf-n3-sNT">
+                                <rect key="frame" x="496" y="11" width="60" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="orK-bN-Q0v"/>
+                                    <constraint firstAttribute="width" constant="60" id="xpZ-H1-bPt"/>
+                                </constraints>
+                                <color key="tintColor" name="shd"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="xmark.seal.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="FkB-ZA-kAS" eventType="touchUpInside" id="O7D-sr-7rF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qdz-UG-rMo"/>
+                        <color key="backgroundColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="596-Ul-pt8" firstAttribute="top" secondItem="Ggl-90-412" secondAttribute="bottom" constant="5" id="1RO-4z-44g"/>
+                            <constraint firstItem="QrP-xe-yZi" firstAttribute="top" secondItem="qdz-UG-rMo" secondAttribute="top" id="GDB-xk-2aB"/>
+                            <constraint firstItem="Ggl-90-412" firstAttribute="top" secondItem="qdz-UG-rMo" secondAttribute="top" constant="5" id="LWA-0K-A6j"/>
+                            <constraint firstAttribute="trailing" secondItem="QrP-xe-yZi" secondAttribute="trailing" id="PVh-xC-KEP"/>
+                            <constraint firstItem="QrP-xe-yZi" firstAttribute="leading" secondItem="cxl-Q6-WE2" secondAttribute="leading" id="Pkx-zZ-BQs"/>
+                            <constraint firstItem="qdz-UG-rMo" firstAttribute="trailing" secondItem="9pf-n3-sNT" secondAttribute="trailing" constant="12" id="VBk-on-gcq"/>
+                            <constraint firstItem="Ggl-90-412" firstAttribute="leading" secondItem="qdz-UG-rMo" secondAttribute="leading" constant="5" id="aQX-EG-0fe"/>
+                            <constraint firstItem="qdz-UG-rMo" firstAttribute="trailing" secondItem="596-Ul-pt8" secondAttribute="trailing" constant="5" id="bmw-xb-ieX"/>
+                            <constraint firstItem="qdz-UG-rMo" firstAttribute="trailing" secondItem="Ggl-90-412" secondAttribute="trailing" constant="5" id="jOZ-nc-dKe"/>
+                            <constraint firstItem="qdz-UG-rMo" firstAttribute="bottom" secondItem="596-Ul-pt8" secondAttribute="bottom" constant="5" id="jcT-52-7ZQ"/>
+                            <constraint firstAttribute="bottom" secondItem="QrP-xe-yZi" secondAttribute="bottom" id="lBl-53-qmR"/>
+                            <constraint firstItem="596-Ul-pt8" firstAttribute="leading" secondItem="qdz-UG-rMo" secondAttribute="leading" constant="5" id="ulR-KO-kRB"/>
+                            <constraint firstItem="9pf-n3-sNT" firstAttribute="top" secondItem="qdz-UG-rMo" secondAttribute="top" constant="12" id="yvx-y9-2yk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6v2-HH-3Eu"/>
+                    <connections>
+                        <outlet property="p1Card" destination="Txe-jb-pqo" id="Bji-UE-7Yo"/>
+                        <outlet property="p1CounterLbl" destination="dQG-pk-xqZ" id="R5F-RZ-5D6"/>
+                        <outlet property="p1ScoreLbl" destination="Kgg-Vx-MF2" id="c0x-cm-LS0"/>
+                        <outlet property="p2Card" destination="VWo-ar-HGJ" id="8xg-aI-heU"/>
+                        <outlet property="p2CounterLbl" destination="h4R-eA-7KT" id="4Zb-JY-v7a"/>
+                        <outlet property="p2ScoreLbl" destination="6jn-13-nAd" id="3DW-wD-v2O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3LM-9p-DGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="1746"/>
+        </scene>
+        <!--Lili AboutUS View Controller-->
+        <scene sceneID="hbZ-Yb-oir">
+            <objects>
+                <viewController id="rc9-ef-gS7" customClass="LiliAboutUSViewController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmo-g6-Ycm">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="HhN-bU-D1Y">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFY-Vy-u7d" customClass="LiliCustomView" customModule="Poker_Zone_Lili" customModuleProvider="target">
+                                <rect key="frame" x="12" y="12" width="544" height="296"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng5-6q-88o">
+                                        <rect key="frame" x="12" y="32" width="500" height="252"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Poker Zone Lili 
+
+Poker Zone Lili is an engaging and visually captivating poker-based game designed for players who enjoy strategy, luck, and competition. With its neon-styled UI and smooth gameplay mechanics, this game offers an immersive poker experience combined with unique game modes.
+
+
+How to Use Poker Zone Lili
+	1.	Main Menu:
+	•	The home screen provides two main options:
+	•	Poker Game: Start playing a thrilling poker-based card game.
+	•	Game History: View past game results, scores, and performance statistics.
+	2.	Gameplay - Ace Face-Off:
+	•	Players engage in a head-to-head battle where they draw poker cards.
+	•	The goal is to achieve a higher card value than your opponent.
+	•	A button labeled “Roll” allows players to draw their next card.
+	•	The scores update dynamically based on wins and losses.
+	3.	Multiplayer and Session View:
+	•	The game allows multiple match instances, as shown in the session management screen.
+	•	Players can engage in multiple matches simultaneously and keep track of ongoing games.
+	4.	Additional Features:
+	•	Information &amp; Rules Section: Access the game’s rules and instructions.
+	•	Leaderboards &amp; Achievements: Track progress and aim for high scores.
+
+Benefits of Playing Poker Zone Lili
+
+ Strategic Gameplay – Enhances decision-making skills as players analyze their odds.
+ Competitive Fun – Enjoy thrilling matches against opponents.
+ Visually Stunning – Neon-themed UI with a modern and stylish design.
+ Game History Tracking – Review previous game sessions and improve strategies.
+ Multiplayer Support – Play multiple sessions simultaneously.
+</string>
+                                        <color key="textColor" name="lbl1"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="cell"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ng5-6q-88o" secondAttribute="bottom" constant="12" id="7fs-fn-4C6"/>
+                                    <constraint firstItem="Ng5-6q-88o" firstAttribute="leading" secondItem="dFY-Vy-u7d" secondAttribute="leading" constant="12" id="A5I-tg-epK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ng5-6q-88o" secondAttribute="trailing" constant="32" id="Fxw-5d-vjg"/>
+                                    <constraint firstItem="Ng5-6q-88o" firstAttribute="top" secondItem="dFY-Vy-u7d" secondAttribute="top" constant="32" id="XBw-yB-1hm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="200"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="cell"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Z-Kf-XjC">
+                                <rect key="frame" x="496" y="11" width="60" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9sj-ue-Vlb"/>
+                                    <constraint firstAttribute="height" constant="60" id="b1D-sb-eHe"/>
+                                </constraints>
+                                <color key="tintColor" name="shd"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="xmark.seal.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="rc9-ef-gS7" eventType="touchUpInside" id="LX0-Va-a5s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kxt-lh-266"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D5Z-Kf-XjC" firstAttribute="top" secondItem="dFY-Vy-u7d" secondAttribute="top" id="0se-Lb-9aX"/>
+                            <constraint firstItem="Kxt-lh-266" firstAttribute="bottom" secondItem="dFY-Vy-u7d" secondAttribute="bottom" constant="12" id="2yJ-dp-TJk"/>
+                            <constraint firstItem="HhN-bU-D1Y" firstAttribute="leading" secondItem="kmo-g6-Ycm" secondAttribute="leading" id="QqJ-cv-g78"/>
+                            <constraint firstAttribute="bottom" secondItem="HhN-bU-D1Y" secondAttribute="bottom" id="Tyg-Fb-OF1"/>
+                            <constraint firstItem="HhN-bU-D1Y" firstAttribute="top" secondItem="kmo-g6-Ycm" secondAttribute="top" id="bcg-Gh-2ZD"/>
+                            <constraint firstItem="Kxt-lh-266" firstAttribute="trailing" secondItem="dFY-Vy-u7d" secondAttribute="trailing" constant="12" id="iHz-we-1Z7"/>
+                            <constraint firstAttribute="trailing" secondItem="HhN-bU-D1Y" secondAttribute="trailing" id="jAL-qi-Kmt"/>
+                            <constraint firstItem="dFY-Vy-u7d" firstAttribute="leading" secondItem="Kxt-lh-266" secondAttribute="leading" constant="12" id="jST-Ge-yHF"/>
+                            <constraint firstItem="dFY-Vy-u7d" firstAttribute="top" secondItem="Kxt-lh-266" secondAttribute="top" constant="12" id="lSv-rg-PDl"/>
+                            <constraint firstItem="D5Z-Kf-XjC" firstAttribute="trailing" secondItem="dFY-Vy-u7d" secondAttribute="trailing" id="wMR-Hd-9bW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LJ3-c7-mLG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cx-ad-AGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602.8169014084508" y="-28.244274809160306"/>
+        </scene>
+        <!--Lili Home View Controller-->
+        <scene sceneID="vXn-Ih-O4g">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rlg-DV-303" customClass="LiliHomeViewController" customModule="PokerZoneLili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xeO-lD-LTj">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-4L-f9c">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poker Zone Lili" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoL-vc-HWC">
+                                <rect key="frame" x="12" y="0.0" width="544" height="62"/>
+                                <fontDescription key="fontDescription" name="HappyFestive" family="Happy Festive" pointSize="52"/>
+                                <color key="textColor" name="lbl1"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="shd"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RXw-pK-2BD">
+                                <rect key="frame" x="142" y="128" width="284" height="160"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-Vl-f7q" customClass="LiliCustomView" customModule="Poker_Zone_Lili" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="160"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-hh-dIi">
+                                                <rect key="frame" x="0.0" y="0.5" width="114.5" height="158.5"/>
+                                                <color key="tintColor" name="lbl1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="backgroundImage" image="oval.fill" catalog="system" renderingMode="hierarchical-single">
+                                                        <hierarchicalColors>
+                                                            <color name="cell"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="FkB-ZA-kAS" kind="push" id="hGL-Nn-oZf"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPX-pR-DUP">
+                                                <rect key="frame" x="6" y="6" width="102.5" height="148"/>
+                                                <string key="text">POKER
+GAME</string>
+                                                <fontDescription key="fontDescription" name="HappyFestive" family="Happy Festive" pointSize="42"/>
+                                                <color key="textColor" name="lbl1"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.78600001340000003" green="0.93199998139999995" blue="0.92900002000000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="gkl-hh-dIi" firstAttribute="top" secondItem="FmG-Vl-f7q" secondAttribute="top" id="9UV-SP-M7O"/>
+                                            <constraint firstItem="gkl-hh-dIi" firstAttribute="leading" secondItem="FmG-Vl-f7q" secondAttribute="leading" id="Bow-mp-LVm"/>
+                                            <constraint firstAttribute="bottom" secondItem="gkl-hh-dIi" secondAttribute="bottom" id="CfG-wj-OYb"/>
+                                            <constraint firstAttribute="bottom" secondItem="hPX-pR-DUP" secondAttribute="bottom" constant="6" id="HvQ-aT-Uni"/>
+                                            <constraint firstAttribute="trailing" secondItem="gkl-hh-dIi" secondAttribute="trailing" id="kz2-Np-gv7"/>
+                                            <constraint firstItem="hPX-pR-DUP" firstAttribute="leading" secondItem="FmG-Vl-f7q" secondAttribute="leading" constant="6" id="pzc-fd-m3h"/>
+                                            <constraint firstItem="hPX-pR-DUP" firstAttribute="top" secondItem="FmG-Vl-f7q" secondAttribute="top" constant="6" id="vEL-nd-bAK"/>
+                                            <constraint firstAttribute="trailing" secondItem="hPX-pR-DUP" secondAttribute="trailing" constant="6" id="zIh-z4-5ZK"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROE-2z-jjK" customClass="LiliCustomView" customModule="Poker_Zone_Lili" customModuleProvider="target">
+                                        <rect key="frame" x="126.5" y="0.0" width="114.5" height="160"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syo-Qh-1ta">
+                                                <rect key="frame" x="0.0" y="0.5" width="114.5" height="158.5"/>
+                                                <color key="tintColor" name="lbl1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="backgroundImage" image="oval.fill" catalog="system" renderingMode="hierarchical-single">
+                                                        <hierarchicalColors>
+                                                            <color name="cell"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="aec-eI-ofg" kind="push" id="frg-3n-ULa"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME HISTORY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIL-ZG-7LL">
+                                                <rect key="frame" x="6" y="6" width="102.5" height="148"/>
+                                                <fontDescription key="fontDescription" name="HappyFestive" family="Happy Festive" pointSize="32"/>
+                                                <color key="textColor" name="lbl1"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.78600001340000003" green="0.93199998139999995" blue="0.92900002000000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="pIL-ZG-7LL" firstAttribute="leading" secondItem="ROE-2z-jjK" secondAttribute="leading" constant="6" id="8cp-c8-RGp"/>
+                                            <constraint firstAttribute="bottom" secondItem="pIL-ZG-7LL" secondAttribute="bottom" constant="6" id="FfU-or-xGV"/>
+                                            <constraint firstItem="pIL-ZG-7LL" firstAttribute="top" secondItem="ROE-2z-jjK" secondAttribute="top" constant="6" id="FhB-4q-tFR"/>
+                                            <constraint firstAttribute="trailing" secondItem="pIL-ZG-7LL" secondAttribute="trailing" constant="6" id="G1C-uc-XEl"/>
+                                            <constraint firstItem="syo-Qh-1ta" firstAttribute="leading" secondItem="ROE-2z-jjK" secondAttribute="leading" id="fjI-4V-BRg"/>
+                                            <constraint firstAttribute="bottom" secondItem="syo-Qh-1ta" secondAttribute="bottom" id="hkI-Vz-ILr"/>
+                                            <constraint firstItem="syo-Qh-1ta" firstAttribute="top" secondItem="ROE-2z-jjK" secondAttribute="top" id="kBv-uf-efF"/>
+                                            <constraint firstAttribute="trailing" secondItem="syo-Qh-1ta" secondAttribute="trailing" id="uPw-OA-iYA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-cW-TZY">
+                                        <rect key="frame" x="253" y="0.0" width="31" height="160"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O26-RN-IXS">
+                                                <rect key="frame" x="0.0" y="0.5" width="31" height="30"/>
+                                                <color key="tintColor" name="lbl1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="info.circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                                        <hierarchicalColors>
+                                                            <color name="cell"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="rc9-ef-gS7" kind="push" id="CgR-fD-oTj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-Hq-exd">
+                                                <rect key="frame" x="0.0" y="43.5" width="31" height="30"/>
+                                                <color key="tintColor" name="lbl1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="exclamationmark.shield.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                                        <hierarchicalColors>
+                                                            <color name="cell"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="rxh-h1-sql" kind="push" id="xcy-5U-MCt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTj-Yh-yxn">
+                                                <rect key="frame" x="0.0" y="86.5" width="31" height="30"/>
+                                                <color key="tintColor" name="lbl1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="doc.richtext.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                                        <hierarchicalColors>
+                                                            <color name="cell"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="lWz-qR-CgM" kind="push" id="p8D-4r-DcF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iV-wa-db0">
+                                                <rect key="frame" x="0.0" y="129.5" width="31" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4iV-wa-db0" secondAttribute="height" id="ZlN-Hn-TGg"/>
+                                                </constraints>
+                                                <color key="tintColor" name="lbl1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="star.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                                        <hierarchicalColors>
+                                                            <color name="cell"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnRate:" destination="rlg-DV-303" eventType="touchUpInside" id="2LC-u5-NPz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ROE-2z-jjK" firstAttribute="width" secondItem="FmG-Vl-f7q" secondAttribute="width" id="hP5-Sy-XjY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s0O-eX-ROV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RXw-pK-2BD" firstAttribute="height" secondItem="Vfa-4L-f9c" secondAttribute="height" multiplier="0.5" id="6AW-n1-XE3"/>
+                            <constraint firstItem="RXw-pK-2BD" firstAttribute="centerY" secondItem="Vfa-4L-f9c" secondAttribute="centerY" multiplier="1.3" id="BPM-Ud-e8Q"/>
+                            <constraint firstItem="RXw-pK-2BD" firstAttribute="width" secondItem="Vfa-4L-f9c" secondAttribute="width" multiplier="0.5" id="OAF-0M-fzc"/>
+                            <constraint firstItem="s0O-eX-ROV" firstAttribute="trailing" secondItem="RoL-vc-HWC" secondAttribute="trailing" constant="12" id="Vfb-bE-haZ"/>
+                            <constraint firstItem="RoL-vc-HWC" firstAttribute="leading" secondItem="s0O-eX-ROV" secondAttribute="leading" constant="12" id="bCg-tZ-XHO"/>
+                            <constraint firstItem="RXw-pK-2BD" firstAttribute="centerX" secondItem="Vfa-4L-f9c" secondAttribute="centerX" id="lu9-io-LCR"/>
+                            <constraint firstItem="Vfa-4L-f9c" firstAttribute="top" secondItem="xeO-lD-LTj" secondAttribute="top" id="mjv-Dk-okn"/>
+                            <constraint firstAttribute="bottom" secondItem="Vfa-4L-f9c" secondAttribute="bottom" id="okF-Py-Kgf"/>
+                            <constraint firstItem="RoL-vc-HWC" firstAttribute="top" secondItem="s0O-eX-ROV" secondAttribute="top" id="v3y-gD-F0s"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfa-4L-f9c" secondAttribute="trailing" id="wG4-yW-612"/>
+                            <constraint firstItem="Vfa-4L-f9c" firstAttribute="leading" secondItem="xeO-lD-LTj" secondAttribute="leading" id="weg-8A-pNg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ckM-NR-uRG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZm-a0-cVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782.3943661971831" y="849.61832061068696"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back card" width="1683" height="2670"/>
+        <image name="bg" width="3000" height="2000"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <image name="doc.richtext.fill" catalog="system" width="115" height="128"/>
+        <image name="exclamationmark.shield.fill" catalog="system" width="121" height="128"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="logo" width="1024" height="1024"/>
+        <image name="oval.fill" catalog="system" width="128" height="96"/>
+        <image name="roll" width="520" height="209"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="xmark.seal.fill" catalog="system" width="128" height="124"/>
+        <namedColor name="bg">
+            <color red="0.32300001382827759" green="0.076999999582767487" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btn">
+            <color red="0.3619999885559082" green="0.94700002670288086" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cell">
+            <color red="0.78600001335144043" green="0.93199998140335083" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lbl1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lbl2">
+            <color red="0.086999997496604919" green="0.092000000178813934" blue="0.079999998211860657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shd">
+            <color red="1" green="0.34799998998641968" blue="0.56800001859664917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
